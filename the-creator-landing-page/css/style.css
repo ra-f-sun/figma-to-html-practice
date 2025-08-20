@@ -1,0 +1,551 @@
+/* Common css starts */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+nav {
+  padding: 21px 0;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Onest", sans-serif;
+  background-color: #f8f5f0;
+}
+.container {
+  width: 1512px;
+  margin: 0 auto;
+} /* Common css ends here */ /* navbar css starts */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f5f0;
+  height: 112px;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.logo {
+  height: 32px;
+  width: 32px;
+}
+.logo-text {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1f392c;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-menu ul a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1f392c;
+  text-transform: capitalize;
+}
+.nav-cta {
+  width: 214px;
+  height: 48px;
+  background-color: #ff60e6;
+  color: #1f392c;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 32px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+} /* navbar css ends */ /* hero section css starts */
+#hero-section {
+  height: 808px;
+  background-color: #f8f5f0;
+  padding: 160px 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: transparent;
+}
+.hero-text h1 {
+  font-size: 112px;
+  line-height: 124px;
+  color: #1f392c;
+  text-align: center;
+  padding: 0 60px;
+  margin-bottom: 32px;
+  z-index: 1;
+}
+.hero-text p {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #1f392c;
+  padding: 0 250px;
+  margin-bottom: 32px;
+}
+.hero-input {
+  height: 64px;
+  width: 567px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 16px 8px 16px;
+  position: relative;
+}
+.hero-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 100px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1f392c;
+}
+.hero-input button {
+  position: absolute;
+  right: 32px;
+  padding: 12px 32px;
+  background-color: #ff60e6;
+  border-radius: 100px;
+  border: none;
+  font-weight: 102px;
+  font-size: 20px;
+  color: #1f392c;
+  text-transform: capitalize;
+}
+.line-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.line-right {
+  position: absolute;
+  top: 209px;
+  right: 0;
+  z-index: 1;
+}
+.line-center {
+  position: absolute;
+  top: 127px;
+  left: 186.5px;
+}
+.hand-left {
+  position: absolute;
+  top: 0;
+  right: 1240px;
+}
+.hand-right {
+  position: absolute;
+  bottom: -33px;
+  left: 1244px;
+} /* Hero css ends */ /* Contact css starts here */
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 72px;
+  justify-content: center;
+  gap: 64px;
+  position: relative;
+}
+.contact-top {
+  margin: 0 295px;
+  color: #1f392c;
+  z-index: 10;
+}
+.contact-top h2 {
+  font-size: 56px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 65px;
+}
+.contact-partner {
+  padding: 70px 104px 70px 0;
+  display: flex;
+  z-index: 1;
+  background-color: #f8f5f0;
+}
+.contact-partner-text {
+  width: 530px;
+  margin-left: 160px;
+}
+.contact-partner-text h3 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1f392c;
+}
+.contact-partner-text p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  padding-right: 20px;
+}
+.contact-partner-card {
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  top: 340px;
+  right: -135px;
+  z-index: 2;
+}
+.contact-partner-card-item {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #ff60e6;
+  width: 404px;
+}
+.contact-partner-card-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.contact-partner-card-item-top img {
+  height: 40px;
+  width: 40px;
+}
+.contact-partner-card-item-top p {
+  font-size: 20px;
+  color: #1f392c;
+  font-weight: 600;
+}
+.contact-partner-card-item-bottom p {
+  color: #1f392c;
+  line-height: 24px;
+  font-size: 16px;
+}
+.for-second-card-item-contact {
+  background-color: #ffadf2;
+}
+.contact-top-line {
+  position: absolute;
+  top: 170px;
+  right: 391px;
+}
+.contact-left-line {
+  position: absolute;
+} /* Contact css ends here */ /* work-1 css starts */
+#work-1 {
+  padding: 64px 295px;
+  gap: 64px;
+  position: relative;
+}
+.work-1-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+.work-1-wrapper h2 {
+  font-size: 56px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 65px;
+  color: #1f392c;
+  padding: 0 295px;
+}
+.work-1-wrapper img {
+  margin: 0 auto;
+} /* work-1 css ends */ /* work-2 css starts */
+#work-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work-2-wrapper {
+  width: 100%;
+  position: relative;
+  padding: 64px 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+.work-2-wrapper h2 {
+  font-size: 56px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 65px;
+  color: #1f392c;
+}
+.work-2-wrapper h5 {
+  font-weight: 800;
+  color: #1f392c;
+  font-size: 32px;
+  text-align: center;
+  padding: 0 140px;
+  line-height: 40px;
+}
+.work-2-wrapper p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 125px;
+}
+.work-3-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 270px;
+}
+.work-3-left-right {
+  display: flex;
+}
+.work-3-text {
+  width: 50%;
+}
+.work-3-text h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: left;
+  color: #1f392c;
+  margin-bottom: 16px;
+}
+.work-3-text p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  padding-right: 64px;
+}
+.work-hand-right {
+  position: absolute;
+  top: 333px;
+  right: 0;
+}
+.work-hand-left {
+  position: absolute;
+  bottom: 277px;
+  right: 1161px;
+  z-index: 1;
+}
+.work-line-right {
+  position: absolute;
+  top: 130px;
+  left: 1263px;
+}
+.work-line-right {
+  position: absolute;
+  top: 130px;
+  left: 1263px;
+}
+.work-line-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+} /* work-2 css ends */ /* Review css starts */
+#review {
+  position: relative;
+}
+.review-wrapper {
+  width: 1512px;
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: flex-start;
+}
+.review-wrapper p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 125px;
+}
+.review-heading-line {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.review-top-heading-line-1 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.review-wrapper h2 {
+  font-size: 56px;
+  font-weight: 800;
+  text-align: left;
+  line-height: 65px;
+  color: #1f392c;
+}
+.review-part-headline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.review-part-headline h2 {
+  padding-right: 895px;
+  font-size: 32px;
+  line-height: 30px;
+}
+.review-swipper-icon {
+  display: flex;
+  gap: 10px;
+}
+.review-swipper-icon img {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+.review-cards {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+}
+.review-card-selected {
+  height: 352px;
+  width: 600px;
+  padding: 24px 52px;
+  background-color: #ffadf2;
+  border-radius: 5px;
+}
+.review-card-selected img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.review-card-selected h5 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1f392c;
+}
+.review-card-selected p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 0 0 0;
+} /* Review css ends */ /* Charity css starts */
+.charity-wrapper {
+  display: flex;
+  gap: 32px;
+  padding: 64px 0;
+}
+.charity-left,
+.charity-right {
+  height: 515px;
+  width: 580px;
+}
+.charity-left {
+  background-color: #ff60e6;
+  padding: 56px 0 24px 0;
+  border-radius: 10px;
+}
+.charity-left img {
+  margin-bottom: 16px;
+}
+.charity-left p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 112px 0 56px;
+}
+.charity-right {
+  background-color: #ffffff;
+  padding: 56px 56px;
+  border-radius: 10px;
+}
+.charity-right h2 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 65px;
+  text-align: left;
+  color: #1f392c;
+  margin-bottom: 16px;
+}
+.charity-right p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 56px 0 0;
+} /* Charity css ends */ /* newsletter css starts */
+.newsletter-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 64px 0;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter-wrapper h2 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 65px;
+  text-align: center;
+  color: #1f392c;
+}
+.newsletter-wrapper p {
+  color: #1f392c;
+  line-height: 32px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 125px;
+  margin-bottom: 64px;
+} /* newsletter css ends */ /* footer css starts */
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0;
+}
+.social-icon {
+  display: flex;
+  gap: 10px;
+} /* footer css ends */
