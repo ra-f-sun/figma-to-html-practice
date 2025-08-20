@@ -1,0 +1,193 @@
+/* Common css starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Fira Code", monospace;
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+  padding: 0 171px;
+}
+/* Common css ends */
+
+/* Root css starts */
+:root {
+  --primary-color: #c778dd;
+  --secondary-color: #abb2bf;
+  --background-color: #282c33;
+  --white-color: #fff;
+}
+/* Root css ends */
+
+/* Header css starts  */
+header {
+  margin-bottom: 62px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0 8px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 20%;
+  cursor: pointer;
+}
+
+.logo-container p {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white-color);
+}
+
+/* #navbar {
+  width: 80%;
+} */
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li a {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+#navbar ul li a:hover {
+  color: var(--white-color);
+}
+
+#navbar ul li:last-child a {
+  font-weight: 800;
+  padding: 0 0 0 16px;
+}
+/* Header css ends  */
+
+/* Hero css starts */
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 18px;
+}
+
+.hero-left {
+  padding-top: 74px;
+  width: 60%;
+}
+
+.hero-left h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--white-color);
+  padding-bottom: 32px;
+  line-height: 40px;
+}
+
+.hero-left h1 span {
+  color: var(--primary-color);
+}
+
+.hero-left p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  padding-bottom: 24px;
+  padding-right: 50px;
+  line-height: 24px;
+}
+
+.hero-left button {
+  background-color: var(--background-color);
+  color: var(--white-color);
+  padding: 8px 16px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.hero-right picture img {
+}
+
+.logo-outline {
+  position: absolute;
+  height: 155px;
+  width: 155px;
+  top: 90px;
+  left: -10px;
+  z-index: -1;
+}
+
+.logo-outline svg {
+  height: 100%;
+  width: 100%;
+}
+
+.dot {
+  position: absolute;
+  top: 246px;
+  right: 16px;
+}
+
+.working-status {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.little-box {
+  height: 16px;
+  width: 16px;
+  background-color: var(--primary-color);
+}
+
+.working-status span {
+  color: var(--white-color);
+  font-weight: 500;
+}
+/* Hero css ends */
