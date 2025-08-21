@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .hamburger {
+    display: block; /* show menu button */
+  }
+
+  #navbar {
+    display: none; /* hide menu initially */
+    position: absolute;
+    top: 80px; /* adjust below header */
+    right: 20px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #navbar.show {
+    display: block; /* visible when toggled */
+  }
+
+  #navbar ul li a {
+    color: var(--white-color);
+    display: block;
+    padding: 8px 12px;
+  }
+
+  #navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+  }
+}

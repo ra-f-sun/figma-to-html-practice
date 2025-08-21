@@ -35,6 +35,17 @@ body {
   margin: 0 auto;
   padding: 0 171px;
 }
+
+button {
+  background-color: var(--background-color);
+  color: var(--white-color);
+  padding: 8px 16px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
 /* Common css ends */
 
 /* Root css starts */
@@ -95,9 +106,21 @@ header {
   font-weight: 800;
   padding: 0 0 0 16px;
 }
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: var(--white-color);
+  cursor: pointer;
+}
 /* Header css ends  */
 
 /* Hero css starts */
+
+#hero-section {
+  position: relative;
+  margin-bottom: 112px;
+}
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
@@ -191,3 +214,313 @@ header {
   font-weight: 500;
 }
 /* Hero css ends */
+
+/* Portfolio css starts */
+#portfolio {
+  position: relative;
+  margin-bottom: 112px;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-top {
+  padding: 0 140px;
+  text-align: right;
+  margin-bottom: 74px;
+}
+.portfolio-top h2 {
+  padding: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+
+.portfolio-top p {
+  display: inline-block;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  line-height: 24px;
+  border: 1px solid var(--primary-color);
+}
+
+.portfolio-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.portfolio-navigation-wrapper h2 {
+  display: flex;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--white-color);
+  line-height: 24px;
+  align-items: center;
+  width: 70%;
+  gap: 16px;
+}
+
+.portfolio-navigation-wrapper h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.portfolio-navigation a {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.portfolio-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  width: 330px;
+  border: 1px solid var(--primary-color);
+}
+
+.portfolio-card picture img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-card h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  padding: 8px;
+}
+
+.portfolio-card h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--white-color);
+  padding: 16px 16px 8px 16px;
+}
+
+.portfolio-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  padding: 16px 16px 8px 16px;
+}
+
+.portfolio-card-item-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 16px 16px 16px;
+}
+
+.portfolio-card-item-cta button:last-child {
+  color: var(--primary-color);
+}
+/* Portfolio css ends */
+
+/* Skill css starts */
+#skill {
+  margin-bottom: 112px;
+}
+.skill-wrapper {
+  position: relative;
+}
+.skill-heading h2 {
+  display: flex;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--white-color);
+  line-height: 24px;
+  align-items: center;
+  width: 40%;
+  gap: 16px;
+}
+
+.skill-heading h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-left {
+  width: 35%;
+}
+
+.skill-right {
+  margin-top: 43px;
+}
+.skill-right-columns {
+  display: flex;
+  gap: 16px;
+}
+
+.skill-right-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-right-single-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-right-each-card {
+  width: 178px;
+  border: 1px solid var(--primary-color);
+  height: fit-content;
+}
+
+.skill-right-each-card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white-color);
+  border-bottom: 1px solid var(--primary-color);
+  padding: 16px 8px;
+}
+
+.skill-right-each-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  padding: 16px 8px;
+  line-height: 25px;
+}
+
+/* Skill css ends */
+
+/* About me css starts */
+#about-me {
+  margin-bottom: 112px;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.about-me-left {
+  width: 45%;
+}
+.about-me-left p {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  line-height: 25px;
+}
+
+.about-me-left button {
+  margin-top: 24px;
+}
+.about-me-right picture img {
+  object-fit: cover;
+  border-bottom: 1px solid var(--primary-color);
+}
+/* About me css ends */
+
+/* Contact css starts */
+#contact {
+  margin-bottom: 112px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.contact-left {
+  width: 45%;
+}
+.contact-left p {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  line-height: 25px;
+}
+
+.contact-info {
+  border: 1px solid var(--primary-color);
+}
+
+.contact-info h2 {
+  font-size: 16px;
+  color: var(--white-color);
+  padding: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: var(--primary-color);
+  padding: 16px;
+}
+/* Contact css ends */
+
+/* Footer css starts */
+#footer {
+  border-top: 1px solid var(--primary-color);
+  padding: 24px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content h6 {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px 0;
+  color: var(--primary-color);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.footer-right h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px 0;
+  color: var(--white-color);
+}
+
+.footer-media i {
+  color: var(--primary-color);
+}
+
+.copyright {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  padding: 16px 0;
+  text-align: center;
+}
+/* Footer css ends */
